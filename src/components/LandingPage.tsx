@@ -57,17 +57,19 @@ const LandingPage = () => {
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 py-8">
         <div className="max-w-6xl w-full flex flex-col items-center gap-8 md:gap-12">
-          {/* Title */}
-          <motion.h1
-            className="text-6xl md:text-8xl lg:text-9xl font-bold text-white text-center"
+          {/* Logo */}
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: 'easeOut' }}
+            className="w-full max-w-2xl px-4"
           >
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(139,92,246,0.5)]">
-              Momentum
-            </span>
-          </motion.h1>
+            <img
+              src="https://sxzefvvmrwdrpksgiexz.supabase.co/storage/v1/object/public/logos/ChatGPT%20Image%20Jan%2017,%202026,%2006_38_08%20PM.png"
+              alt="Momentum"
+              className="w-full h-auto drop-shadow-[0_0_30px_rgba(139,92,246,0.5)]"
+            />
+          </motion.div>
 
           {/* Dates & Locations */}
           <motion.div
