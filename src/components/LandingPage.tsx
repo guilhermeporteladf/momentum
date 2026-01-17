@@ -56,13 +56,13 @@ const LandingPage = () => {
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-full px-4 py-8">
-        <div className="max-w-6xl w-full flex flex-col items-center gap-8 md:gap-12">
+        <div className="max-w-6xl w-full flex flex-col items-center gap-4 md:gap-12">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: 'easeOut' }}
-            className="w-full max-w-2xl px-4"
+            className="w-full max-w-3xl md:max-w-2xl px-4"
           >
             <img
               src="https://sxzefvvmrwdrpksgiexz.supabase.co/storage/v1/object/public/logos/ChatGPT%20Image%20Jan%2017,%202026,%2006_38_08%20PM.png"
@@ -73,7 +73,7 @@ const LandingPage = () => {
 
           {/* Dates & Locations */}
           <motion.div
-            className="text-xl md:text-2xl text-gray-300 text-center space-y-2"
+            className="text-xl md:text-2xl text-gray-300 text-center space-y-2 -mt-2 md:mt-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
