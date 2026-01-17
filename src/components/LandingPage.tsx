@@ -4,7 +4,7 @@ import MomentumBallAnimation from './MomentumBallAnimation'
 
 const LandingPage = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="relative w-full h-screen md:h-screen md:overflow-hidden min-h-screen overflow-y-auto bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Animated Background Gradient */}
       <motion.div
         className="absolute inset-0 opacity-30"
@@ -55,7 +55,7 @@ const LandingPage = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 py-8">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-full px-4 py-8">
         <div className="max-w-6xl w-full flex flex-col items-center gap-8 md:gap-12">
           {/* Logo */}
           <motion.div
